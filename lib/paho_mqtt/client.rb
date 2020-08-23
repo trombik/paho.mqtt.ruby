@@ -44,10 +44,10 @@ module PahoMqtt
     # Timeout attributes:
     attr_accessor :keep_alive
     attr_accessor :ack_timeout
+    attr_accessor :ssl_context
 
     #Read Only attribute
     attr_reader :connection_state
-    attr_reader :ssl_context
 
     def initialize(*args)
       @last_packet_id         = 0
